@@ -122,24 +122,11 @@ def t1data(file_name):
 
 if __name__ == "__main__":
     
-    #data = s0data('s0.log')
-    #fp_s1 = {'nproc':16,'mem':4,'keywords':"opt b3lyp/gen pseudo=read TD",'pseudo':True,\
-    #        'pseudo_element':'Ir','other_element':'C H O N','pseudo_basis':'Lanl2DZ',\
-    #        'other_basis':'6-31G**','multiplicity': 1, 'charge': 0, 'chk':'s1'}
-    #ret = make_gaussian_input(data,fp_s1)
-    #with open('s1.com','w') as fp:
-    #    fp.write(ret)
-    #fp_st = {'nproc':16,'mem':4,'keywords':"opt b3lyp/gen pseudo=read",'pseudo':True,\
-    #        'pseudo_element':'Ir','other_element':'C H O N','pseudo_basis':'Lanl2DZ',\
-    #        'other_basis':'6-31G**','multiplicity': 3, 'charge': 0, 'chk':'t1'}
-    #ret = make_gaussian_input(data,fp_st)
-    #with open('t1.com','w') as fp:
-    #    fp.write(ret)
 
     lebesgue_context = LebesgueContext(
         executor="lebesgue_v2",
-        extra='{"scass_type":"c16_m64_cpu","program_id":2118}',
-        authorization='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjIyODc3OTAsImlhdCI6MTY1OTY5NTc5MCwiaWRlbnRpdHkiOnsidXNlcl9pZCI6MTMyNCwidXNlcl9uYW1lIjoiMjM2OTU2MTMwMEBxcS5jb20iLCJlbWFpbCI6IjIzNjk1NjEzMDBAcXEuY29tIiwidXNlcl9raW5kIjoyLCJvcmdJZCI6MTMyNH19.mNFtXhaY7a4c-7E-vUQsaLy02nC6BmoqNfsXrL42R00',
+        extra='{"scass_type":"c16_m64_cpu","program_id": "your program id"}',
+        authorization='your bohrium authorization',
         app_name='Default',
         org_id='123',
         user_id='456',
