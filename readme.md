@@ -1,1 +1,3 @@
-you need to
+Prerequirements:
+dflow; bohrium account
+
