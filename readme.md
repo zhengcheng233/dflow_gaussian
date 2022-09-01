@@ -1,4 +1,4 @@
-# dflow: electronic structure calculation based on VASP and pymatgen
+# dflow: calculate s1 and t1 state energy and molecule properties (homo and lumo) of OLED molecules with Gaussian 16
 
 ## Introduction
 This dflow proposal is for electronic structure calculations using VASP, from obtaining cif structure information to structure optimization, and then to calculate several electronic structure properties in parallel, ELF and charge density as examples in this project. 
