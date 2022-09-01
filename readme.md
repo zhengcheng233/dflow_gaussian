@@ -12,4 +12,17 @@ However, with the aid of dflow, we only need to prepare the gaussian 16 input fi
 ![alt 文字](./pics/dflow_diagram.jpg)
 <center> Figure 1. The dflow diagram for molecule energy and properties calculations based on Gaussian16</center>
 
-### Codes 
+### How to run the program
+1. Prepare a gaussian input file named "s0.com" of OLED molecules which contains the structure informations.
+2. Add your program id and authorization from Bohrium platform to the lbg_flow.py.  
+if __name__ == "__main__":
+    lebesgue_context = LebesgueContext(
+        executor="lebesgue_v2",
+        extra='{"scass_type":"c16_m64_cpu","program_id": "your program id"}',
+        authorization='your bohrium authorization',
+        app_name='Default',
+        org_id='123',
+        user_id='456',
+        tag='',
+    )
+    3. Run "python lbg_flow.py", and then structre optimizaton at s0, s1 and t1 state will be performed, molecule energy, homo and lumo information is collected at s1data.npy and t1data.npy 
