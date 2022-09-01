@@ -27,4 +27,4 @@ if __name__ == "__main__":
         tag='',
     )
     ```
-    3. Run "python lbg_flow.py", and then structre optimizaton at s0, s1 and t1 state will be performed, molecule energy, homo and lumo information is collected at s1data.npy and t1data.npy 
+ 3. Run "python lbg_flow.py", and then structre optimizaton at s0, s1 and t1 state will be performed, molecule energy, homo and lumo information is collected at s1data.npy and t1data.npy 
